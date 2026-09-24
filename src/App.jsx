@@ -64,7 +64,6 @@ function Icon({ name, size = 18 }) {
   const shared = { width: size, height: size, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.8, strokeLinecap: 'round', strokeLinejoin: 'round', 'aria-hidden': true }
   const paths = {
     arrow: <><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></>,
-    sparkle: <><path d="m12 3 1.5 6.5L20 12l-6.5 1.5L12 20l-1.5-6.5L4 12l6.5-2.5L12 3Z" /><path d="m19 14 1 3 3 1-3 1-1 3-1-3-3-1 3-1 1-3Z" /></>,
     book: <><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21V5.5Z" /><path d="M4 17.5A2.5 2.5 0 0 1 6.5 15H20" /></>,
     download: <><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M5 19h14" /></>,
     menu: <><path d="M4 7h16M4 12h16M4 17h16" /></>,
@@ -76,7 +75,7 @@ function Icon({ name, size = 18 }) {
 function Brand({ light = false }) {
   return (
     <a className={`brand${light ? ' brand-light' : ''}`} href="/" aria-label="AI Team 首页">
-      <span className="brand-mark"><Icon name="sparkle" size={20} /></span>
+      <span className="brand-mark">A<span>·</span></span>
       <span>AI Team</span>
     </a>
   )
