@@ -220,7 +220,7 @@ function HomePage() {
             <div className="hero-orbit hero-orbit-one" />
             <div className="hero-orbit hero-orbit-two" />
           </div>
-          <a className="scroll-cue" href="#features"><span />向下探索</a>
+          <video className="hero-introduction-video" controls preload="metadata" src="/videos/ai-team-introduction.mp4" aria-label="AI Team 产品介绍视频" />
         </section>
 
         <div id="features" className="feature-sections">
